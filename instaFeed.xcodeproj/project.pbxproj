@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B46AE0D428D3084F005BF699 /* ProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AE0D328D3084F005BF699 /* ProfileDataView.swift */; };
 		B46AE0D628D30E98005BF699 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AE0D528D30E98005BF699 /* ProfileCollectionViewCell.swift */; };
+		B46AE0D828D314A7005BF699 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AE0D728D314A7005BF699 /* UploadViewController.swift */; };
 		B4DF08F328D2A383008BCC87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF08F228D2A383008BCC87 /* AppDelegate.swift */; };
 		B4DF08F528D2A383008BCC87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF08F428D2A383008BCC87 /* SceneDelegate.swift */; };
 		B4DF08F728D2A383008BCC87 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF08F628D2A383008BCC87 /* FeedViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		B46AE0D328D3084F005BF699 /* ProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataView.swift; sourceTree = "<group>"; };
 		B46AE0D528D30E98005BF699 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		B46AE0D728D314A7005BF699 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		B4DF08EF28D2A383008BCC87 /* instaFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DF08F228D2A383008BCC87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4DF08F428D2A383008BCC87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				B4DF08F628D2A383008BCC87 /* FeedViewController.swift */,
 				B4DF090C28D2A94A008BCC87 /* FeedTableViewCell.swift */,
+				B46AE0D728D314A7005BF699 /* UploadViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4DF08F728D2A383008BCC87 /* FeedViewController.swift in Sources */,
+				B46AE0D828D314A7005BF699 /* UploadViewController.swift in Sources */,
 				B46AE0D628D30E98005BF699 /* ProfileCollectionViewCell.swift in Sources */,
 				B4DF090F28D2B174008BCC87 /* UIButton+.swift in Sources */,
 				B4DF090A28D2A4EB008BCC87 /* TabBarController.swift in Sources */,

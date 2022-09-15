@@ -15,6 +15,15 @@ class FeedViewController: UIViewController {
         
         return tableView
     }()
+    
+    private lazy var imagePickerViewController: UIImagePickerController = {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.allowsEditing = true // 사진 선택 후 편집 기능 추가
+        imagePickerController.delegate = self
+        
+        return imagePickerController
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +46,29 @@ extension FeedViewController: UITableViewDataSource{
         
         return cell ?? UITableViewCell()
     }
-    
-    
+}
+
+extension FeedViewController: UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+    //사진을 클릭 후 편집화면에서 choose를 눌렀을 때 실행되는 메서드
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        var selectImage: UIImage?
+        
+        if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
+            selectImage = editedImage
+        } else if let originImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            selectImage = originImage
+        }
+        
+        print(selectImage)
+        picker.dismiss(animated: true){
+            let uploadViewController = UploadViewController()
+            let navigationController = UINavigationController(rootViewController: uploadViewController)
+            
+            navigationController.modalPresentationStyle = .fullScreen
+            
+            self.present(navigationController, animated: true)
+        }
+    }
 }
 
 private extension FeedViewController{
@@ -48,8 +78,12 @@ private extension FeedViewController{
         let uploaButton = UIBarButtonItem(image: UIImage(systemName: "plus.app"),
                                           style: .plain,
                                           target: self,
-                                          action: nil)
+                                          action: #selector(didTapUploadButton))
         navigationItem.rightBarButtonItem = uploaButton
+    }
+    
+    @objc func didTapUploadButton(){
+        present(imagePickerViewController, animated: true)
     }
     
     func setupTableView(){
