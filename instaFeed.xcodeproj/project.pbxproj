@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B46AE0D428D3084F005BF699 /* ProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AE0D328D3084F005BF699 /* ProfileDataView.swift */; };
+		B46AE0D628D30E98005BF699 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46AE0D528D30E98005BF699 /* ProfileCollectionViewCell.swift */; };
 		B4DF08F328D2A383008BCC87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF08F228D2A383008BCC87 /* AppDelegate.swift */; };
 		B4DF08F528D2A383008BCC87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF08F428D2A383008BCC87 /* SceneDelegate.swift */; };
 		B4DF08F728D2A383008BCC87 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF08F628D2A383008BCC87 /* FeedViewController.swift */; };
@@ -16,9 +18,12 @@
 		B4DF090A28D2A4EB008BCC87 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF090928D2A4EB008BCC87 /* TabBarController.swift */; };
 		B4DF090D28D2A94A008BCC87 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF090C28D2A94A008BCC87 /* FeedTableViewCell.swift */; };
 		B4DF090F28D2B174008BCC87 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF090E28D2B174008BCC87 /* UIButton+.swift */; };
+		B4DF091228D2C3C3008BCC87 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF091128D2C3C3008BCC87 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B46AE0D328D3084F005BF699 /* ProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataView.swift; sourceTree = "<group>"; };
+		B46AE0D528D30E98005BF699 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4DF08EF28D2A383008BCC87 /* instaFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DF08F228D2A383008BCC87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4DF08F428D2A383008BCC87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +34,7 @@
 		B4DF090928D2A4EB008BCC87 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B4DF090C28D2A94A008BCC87 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		B4DF090E28D2B174008BCC87 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		B4DF091128D2C3C3008BCC87 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +82,30 @@
 		B4DF090B28D2A4F7008BCC87 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				B4DF08F628D2A383008BCC87 /* FeedViewController.swift */,
+				B4DF091328D2C3E1008BCC87 /* Profile */,
+				B4DF091028D2C3B0008BCC87 /* Feed */,
 				B4DF090928D2A4EB008BCC87 /* TabBarController.swift */,
-				B4DF090C28D2A94A008BCC87 /* FeedTableViewCell.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B4DF091028D2C3B0008BCC87 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B4DF08F628D2A383008BCC87 /* FeedViewController.swift */,
+				B4DF090C28D2A94A008BCC87 /* FeedTableViewCell.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		B4DF091328D2C3E1008BCC87 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B4DF091128D2C3C3008BCC87 /* ProfileViewController.swift */,
+				B46AE0D328D3084F005BF699 /* ProfileDataView.swift */,
+				B46AE0D528D30E98005BF699 /* ProfileCollectionViewCell.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +185,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4DF08F728D2A383008BCC87 /* FeedViewController.swift in Sources */,
+				B46AE0D628D30E98005BF699 /* ProfileCollectionViewCell.swift in Sources */,
 				B4DF090F28D2B174008BCC87 /* UIButton+.swift in Sources */,
 				B4DF090A28D2A4EB008BCC87 /* TabBarController.swift in Sources */,
 				B4DF08F328D2A383008BCC87 /* AppDelegate.swift in Sources */,
+				B4DF091228D2C3C3008BCC87 /* ProfileViewController.swift in Sources */,
 				B4DF08F528D2A383008BCC87 /* SceneDelegate.swift in Sources */,
+				B46AE0D428D3084F005BF699 /* ProfileDataView.swift in Sources */,
 				B4DF090D28D2A94A008BCC87 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
