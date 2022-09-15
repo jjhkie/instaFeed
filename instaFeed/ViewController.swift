@@ -1,9 +1,4 @@
-//
-//  ViewController.swift
-//  instaFeed
-//
-//  Created by kup on 2022/09/15.
-//
+
 
 import UIKit
 

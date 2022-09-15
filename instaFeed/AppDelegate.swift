@@ -1,9 +1,4 @@
-//
-//  AppDelegate.swift
-//  instaFeed
-//
-//  Created by kup on 2022/09/15.
-//
+
 
 import UIKit
 
